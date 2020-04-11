@@ -1,1 +1,1 @@
-echo "You've made a mistake running this game";cd src;javac -d ../bin game/Main.java;cd ../bin;java game.Main;echo "This game bad";
+echo "You've made a mistake running this game";cd src;javac -d ../bin game/Main.java;cd ../bin;java game.Main;cd ..;echo "This game bad";
