@@ -1,6 +1,7 @@
 package game;
 
 import java.awt.Color;
+import java.awt.Dimension;
 
 import javax.swing.JFrame;
 
@@ -14,19 +15,22 @@ import ide.ProgramPanel;
  */
 public class Main {
 	
-	public static Color BACKGROUND = new Color(245, 91, 214);
-	
+	// 2373 lines of code lol
 	public static void main(String[] args) {
+		
+		ResourceLoader.loadResources();
+		
 		JFrame frame = new JFrame("Interconnected");
-		NetworkPanel np = new NetworkPanel();
-		//ProgramPanel pp = new ProgramPanel();
-		frame.add(np);
-		//frame.add(pp);
-		frame.setSize(800,600);
+		GamePanel gp = new GamePanel();
+		
+		frame.setContentPane(gp);
+		
+		frame.setMinimumSize(new Dimension(1000, 800));
+		
+		frame.setSize(1000,800);
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
-		frame.addKeyListener(np);
 
 	}
 
