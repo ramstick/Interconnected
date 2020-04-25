@@ -3,8 +3,8 @@ package objects;
 import java.awt.Color;
 import java.awt.Graphics2D;
 
-import game.TransformMatrix;
-import game.Vector;
+import renderer.TransformMatrix;
+import renderer.Vector;
 
 public class Connection {
 	InternetComponent a, b;
